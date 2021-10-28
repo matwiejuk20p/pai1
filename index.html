@@ -6,17 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DOMek</title>
     <style>
-      body{
-        background-color:#efb34a;
+      body {
+        background-color: #efb34a;
+      }
+      header {
         display: flex;
         justify-content: center;
-        height: 100vh;
       }
       h1 {
         text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
       }
+      main {
+        display: flex;
+        justify-content: center;
+      }
       input[type='text']:focus {
         background-color: #dfb27c;
+      }
+      p {
+        color: #000000;
+        font-size: 36px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      .button2 {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
       }
     </style>
   </head>
@@ -27,7 +42,7 @@
     <main>
       <section>
         <input type="text" />
-        <button>value</button>
+        <button class="button button2">value</button>
         <p></p>
       </section>
     </main>
