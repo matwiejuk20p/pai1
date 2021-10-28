@@ -50,11 +50,11 @@
 
     <script>
       function klik() {
-        i = document.querySelector('input').value;
-        pa = document.querySelector('p');
+        let i = document.querySelector('input').value;
+        const pa = document.querySelector('p');
         pa.innerHTML = 'Twoj tekst: ' + i;
       }
-      b = document.querySelector('button');
+      const b = document.querySelector('button');
       b.addEventListener('click', klik);
     </script>
   </body>
