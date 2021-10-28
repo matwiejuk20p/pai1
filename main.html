@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOMek</title>
+  </head>
+  <body>
+    <input type="text" />
+    <button>value</button>
+    <p></p>
+
+    <script>
+      function klik() {
+        i = document.querySelector('input').value;
+        pa = document.querySelector('p');
+        pa.innerHTML = 'Twoj tekst: ' + i;
+      }
+      b = document.querySelector('button');
+      b.addEventListener('click', klik);
+    </script>
+  </body>
+</html>
