@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>stringi javascriptowe</h1>
+
+    <textarea name="text" id="text" cols="30" rows="10"></textarea><br />
+    <input type="text" /><br />
+    <p>cos cos</p>
+    <button name="dlugosc">length</button>
+    <button name="">UpperCase</button>
+    <button name="">LowerCase</button>
+    <button name="">charAt</button>
+    <button name="">charCodeAt</button>
+    <button name="">indexOf</button>
+    <button name="">lastIndexOf</button>
+    <button name="">substring</button>
+    <button name="">substr</button>
+    <button name="">slice</button>
+    <button name="">replace</button>
+    <button name="">replaceAll</button>
+
+    <script>
+      const tekst = document.querySelector('textarea');
+      const opcja = document.querySelectorAll('button');
+      const dane = document.querySelector('input');
+      const p = document.querySelector('p');
+
+      opcja[0].addEventListener('click', function() {
+        p.innerHTML = tekst.value.length;
+      });
+      opcja[1].addEventListener('click', function() {
+        p.innerHTML = tekst.value.toUpperCase();
+      });
+      opcja[2].addEventListener('click', function() {
+        p.innerHTML = tekst.value.toLowerCase();
+      });
+      opcja[3].addEventListener('click', function() {
+        p.innerHTML = tekst.value.charAt(dane.value - 1);
+      });
+      opcja[4].addEventListener('click', function() {
+        p.innerHTML = tekst.value.charCodeAt(dane.value - 1);
+      });
+      opcja[5].addEventListener('click', function() {
+        p.innerHTML = tekst.value.indexOf(dane.value) + 1;
+      });
+      opcja[6].addEventListener('click', function() {
+        p.innerHTML = tekst.value.lastIndexOf(dane.value) + 1;
+      });
+      opcja[7].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.substring(split[0], split[1]);
+      });
+      opcja[8].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.substr(split[0], split[1]);
+      });
+      opcja[9].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.slice(split[0], split[1]);
+      });
+      opcja[9].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.slice(split[0], split[1]);
+      });
+      opcja[10].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.replace(split[0], split[1]);
+      });
+      opcja[11].addEventListener('click', function() {
+        let split = dane.value.split(',');
+        p.innerHTML = tekst.value.replaceAll(split[0], split[1]);
+      });
+    </script>
+  </body>
+</html>
